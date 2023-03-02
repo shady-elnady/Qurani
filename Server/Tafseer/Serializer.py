@@ -6,12 +6,11 @@ from .models import Tafseer
 
 
 class TafseerSerializer(HyperlinkedModelSerializer):
-
     class Meta:
         model = Tafseer
         fields = [
             "url",
-            "key",
+            "serial_no",
             "id",
             "title",
             "info",

@@ -105,7 +105,7 @@ WSGI_APPLICATION = 'Config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'DataBase/db.sqlite3',
+        'NAME': BASE_DIR / 'DataBase/Qurani.sqlite3',
     }
 }
 

@@ -4,7 +4,7 @@ import json
 def pathJSON(fileName):
     return os.path.join("scripts", "JSON", f"{fileName}.json")
 
-json_data = open(pathJSON("aya"))   
+json_data = open(pathJSON("audio"))   
 data = json.load(json_data)["rows"] # deserialises it
 json_data.close()
 

@@ -3,6 +3,7 @@ from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 
 from Aya.models import Aya
+from Sora.models import Sora
 
 # Create your mofrom django.utils.text import slugify
 
@@ -29,7 +30,6 @@ class Language(models.Model):
     )
     emoji = models.CharField(
         max_length= 1,
-        unique= True,
         verbose_name= _("Emoji"),
     )
     rtl = models.BooleanField(
@@ -60,10 +60,16 @@ class AyaLanguage(models.Model):
         related_name= _("Aya"),
         verbose_name= _("Language")
     )
+    sora = models.ForeignKey(
+        Sora,
+        on_delete= models.CASCADE,
+        related_name= _("SoraLanguages"),
+        verbose_name= _("Sora")
+    )
     aya = models.ForeignKey(
         Aya,
         on_delete= models.CASCADE,
-        related_name= _("Languages"),
+        related_name= _("AyaLanguages"),
         verbose_name= _("Aya")
     )
     text = models.TextField(

@@ -15,9 +15,9 @@ class Tafseer(models.Model):
         type_1 = 3, _("")
         type_2 = 4, _("")
     
-    key = models.AutoField(
+    serial_no = models.AutoField(
         primary_key= True,
-        verbose_name= _("Prmary Key"),
+        verbose_name= _("Serial Nomber"),
     )
     id = models.PositiveSmallIntegerField(
         verbose_name= _("ID"),
