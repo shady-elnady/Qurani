@@ -10,8 +10,8 @@ from Qaria.models import Qaria
 class Audio(models.Model):
 
     class AudioTypes(models.TextChoices):
-        _0 = 0, _("")
-        _1 = 1, _("")
+        Murattal = 0, _("Murattal")
+        Mujawwad = 1, _("Mujawwad")
 
     id = models.AutoField(
         primary_key= True,

@@ -7,13 +7,12 @@ from Aya.models import Aya
 # Create your mofrom django.utils.text import slugify
 
 
-
 class Tafseer(models.Model):
     class TafseerTypes(models.TextChoices):
-        type = 1, _("")
-        type_ = 2, _("")
-        type_1 = 3, _("")
-        type_2 = 4, _("")
+        type1 = "1", _("Type1")
+        type2 = "2", _("Type2")
+        type3 = "3", _("Type3")
+        type4 = "4", _("Type4")
     
     serial_no = models.AutoField(
         primary_key= True,

@@ -24,8 +24,10 @@ from API.router import router
 urlpatterns = [
     path('admin/', admin.site.urls),
     ## Rest Framwork URL
-    path('api/', include((router.urls, "API"))),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    # path('api/', include((router.urls, "API"))),
+    # path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('api/', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
     # Admin
 ]
 
