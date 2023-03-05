@@ -1,6 +1,6 @@
 from rest_framework import routers
 
-from Sora.ViewsSet import SoraViewSet
+from Sora.ViewsSet import SoraViewSet 
 from Aya.ViewsSet import AyaViewSet
 from Bookmark.ViewsSet import BookMarkViewSet
 from Tafseer.ViewsSet import TafseerViewSet

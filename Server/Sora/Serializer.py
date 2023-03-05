@@ -1,5 +1,4 @@
 from rest_framework.serializers import HyperlinkedModelSerializer
-from rest_framework.reverse import reverse
 
 from .models import Sora
 from Aya.Serializer import AyaSerializer
@@ -7,7 +6,7 @@ from Aya.Serializer import AyaSerializer
 
 
 class SoraSerializer(HyperlinkedModelSerializer):
-    Ayat = AyaSerializer(many= True)
+    # Ayat = AyaSerializer(many= True)
     class Meta:
         model = Sora
         fields = [
@@ -16,6 +15,6 @@ class SoraSerializer(HyperlinkedModelSerializer):
             "name",
             "native",
             "place",
-            "Ayat",
+            # "Ayat",
             "slug",
         ]
