@@ -15,6 +15,7 @@ class SoraSerializer(HyperlinkedModelSerializer):
             "name",
             "native",
             "place",
+            "noOfVerses",
             # "Ayat",
             "slug",
         ]

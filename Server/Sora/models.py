@@ -30,6 +30,10 @@ class Sora(models.Model):
         choices= DisembarkationPlaces.choices,
         verbose_name= _("Disembarkation Place"),
     )
+    noOfVerses = models.PositiveSmallIntegerField(
+        null= True,
+        verbose_name= _("number Of Verses"),
+    )
 
     @property
     def slug(self) -> str:

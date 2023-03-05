@@ -1,841 +1,996 @@
-{
-    "type": "table",
-    "database": null,
-    "name": "sora",
-    "withoutRowId": true,
-    "ddl": "CREATE TABLE sora (soraid INTEGER NOT NULL, native VARCHAR (15), name TIME (15), place INTEGER, n VARCHAR (15), PRIMARY KEY (soraid));",
-    "columns": [
-        {
-            "name": "soraid",
-            "type": "INTEGER",
-            "constraints": [
-                {
-                    "type": "NOT NULL",
-                    "definition": "NOT NULL"
-                }
-            ]
-        },
-        {
-            "name": "native",
-            "type": "VARCHAR"
-        },
-        {
-            "name": "name",
-            "type": "TIME"
-        },
-        {
-            "name": "place",
-            "type": "INTEGER"
-        },
-        {
-            "name": "n",
-            "type": "VARCHAR"
-        }
-    ],
-    "constraints": [
-        {
-            "type": "PRIMARY KEY",
-            "definition": "PRIMARY KEY (soraid)"
-        }
-    ],
-    "rows": [
-        [
-            1,
-            "الفاتحة",
-            "Al-Fatiha",
-            1,
-            null
-        ],
-        [
-            2,
-            "البقرة",
-            "Al-Baqara",
-            2,
-            null
-        ],
-        [
-            3,
-            "آل عمران",
-            "Aal-E-Imran",
-            2,
-            null
-        ],
-        [
-            4,
-            "النساء",
-            "An-Nisa",
-            2,
-            null
-        ],
-        [
-            5,
-            "المائدة",
-            "Al-Maeda",
-            2,
-            null
-        ],
-        [
-            6,
-            "الأنعام",
-            "Al-Anaam",
-            1,
-            null
-        ],
-        [
-            7,
-            "الأعراف",
-            "Al-Araf",
-            1,
-            null
-        ],
-        [
-            8,
-            "الأنفال",
-            "Al-Anfal",
-            2,
-            null
-        ],
-        [
-            9,
-            "التوبة",
-            "At-Tawba",
-            2,
-            null
-        ],
-        [
-            10,
-            "يونس",
-            "Yunus",
-            1,
-            null
-        ],
-        [
-            11,
-            "هود",
-            "Hud",
-            1,
-            null
-        ],
-        [
-            12,
-            "يوسف",
-            "Yusuf",
-            1,
-            null
-        ],
-        [
-            13,
-            "الرعد",
-            "Ar-Rad",
-            2,
-            null
-        ],
-        [
-            14,
-            "إبراهيم",
-            "Ibrahim",
-            1,
-            null
-        ],
-        [
-            15,
-            "الحجر",
-            "Al-Hijr",
-            1,
-            null
-        ],
-        [
-            16,
-            "النحل",
-            "An-Nahl",
-            1,
-            null
-        ],
-        [
-            17,
-            "الإسراء",
-            "Al-Isra",
-            1,
-            null
-        ],
-        [
-            18,
-            "الكهف",
-            "Al-Kahf",
-            1,
-            null
-        ],
-        [
-            19,
-            "مريم",
-            "Maryam",
-            1,
-            null
-        ],
-        [
-            20,
-            "طه",
-            "Ta-Ha",
-            1,
-            null
-        ],
-        [
-            21,
-            "الأنبياء",
-            "Al-Anbiya",
-            1,
-            null
-        ],
-        [
-            22,
-            "الحج",
-            "Al-Hajj",
-            2,
-            null
-        ],
-        [
-            23,
-            "المؤمنون",
-            "Al-Mumenoon",
-            1,
-            null
-        ],
-        [
-            24,
-            "النور",
-            "An-Noor",
-            2,
-            null
-        ],
-        [
-            25,
-            "الفرقان",
-            "Al-Furqan",
-            1,
-            null
-        ],
-        [
-            26,
-            "الشعراء",
-            "Ash-Shuara",
-            1,
-            null
-        ],
-        [
-            27,
-            "النمل",
-            "An-Naml",
-            1,
-            null
-        ],
-        [
-            28,
-            "القصص",
-            "Al-Qasas",
-            1,
-            null
-        ],
-        [
-            29,
-            "العنكبوت",
-            "Al-Ankaboot",
-            1,
-            null
-        ],
-        [
-            30,
-            "الروم",
-            "Ar-Room",
-            1,
-            null
-        ],
-        [
-            31,
-            "لقمان",
-            "Luqman",
-            1,
-            null
-        ],
-        [
-            32,
-            "السجدة",
-            "As-Sajda",
-            1,
-            null
-        ],
-        [
-            33,
-            "الأحزاب",
-            "Al-Ahzab",
-            2,
-            null
-        ],
-        [
-            34,
-            "سبأ",
-            "Saba",
-            1,
-            null
-        ],
-        [
-            35,
-            "فاطر",
-            "Fatir",
-            1,
-            null
-        ],
-        [
-            36,
-            "يس",
-            "Ya-Seen",
-            1,
-            null
-        ],
-        [
-            37,
-            "الصافات",
-            "As-Saaffat",
-            1,
-            null
-        ],
-        [
-            38,
-            "ص",
-            "Sad",
-            1,
-            null
-        ],
-        [
-            39,
-            "الزمر",
-            "Az-Zumar",
-            1,
-            null
-        ],
-        [
-            40,
-            "غافر",
-            "Ghafir",
-            1,
-            null
-        ],
-        [
-            41,
-            "فصلت",
-            "Fussilat",
-            1,
-            null
-        ],
-        [
-            42,
-            "الشورى",
-            "Ash-Shura",
-            1,
-            null
-        ],
-        [
-            43,
-            "الزخرف",
-            "Az-Zukhruf",
-            1,
-            null
-        ],
-        [
-            44,
-            "الدخان",
-            "Ad-Dukhan",
-            1,
-            null
-        ],
-        [
-            45,
-            "الجاثية",
-            "Al-Jathiya",
-            1,
-            null
-        ],
-        [
-            46,
-            "الأحقاف",
-            "Al-Ahqaf",
-            1,
-            null
-        ],
-        [
-            47,
-            "محمد",
-            "Muhammad",
-            2,
-            null
-        ],
-        [
-            48,
-            "الفتح",
-            "Al-Fath",
-            2,
-            null
-        ],
-        [
-            49,
-            "الحجرات",
-            "Al-Hujraat",
-            2,
-            null
-        ],
-        [
-            50,
-            "ق",
-            "Qaf",
-            1,
-            null
-        ],
-        [
-            51,
-            "الذاريات",
-            "Adh-Dhariyat",
-            1,
-            null
-        ],
-        [
-            52,
-            "الطور",
-            "At-Tur",
-            1,
-            null
-        ],
-        [
-            53,
-            "النجم",
-            "An-Najm",
-            1,
-            null
-        ],
-        [
-            54,
-            "القمر",
-            "Al-Qamar",
-            1,
-            null
-        ],
-        [
-            55,
-            "الرحمن",
-            "Ar-Rahman",
-            2,
-            null
-        ],
-        [
-            56,
-            "الواقعة",
-            "Al-Waqia",
-            1,
-            null
-        ],
-        [
-            57,
-            "الحديد",
-            "Al-Hadid",
-            2,
-            null
-        ],
-        [
-            58,
-            "المجادلة",
-            "Al-Mujadila",
-            2,
-            null
-        ],
-        [
-            59,
-            "الحشر",
-            "Al-Hashr",
-            2,
-            null
-        ],
-        [
-            60,
-            "الممتحنة",
-            "Al-Mumtahina",
-            2,
-            null
-        ],
-        [
-            61,
-            "الصف",
-            "As-Saff",
-            2,
-            null
-        ],
-        [
-            62,
-            "الجمعة",
-            "Al-Jumua",
-            2,
-            null
-        ],
-        [
-            63,
-            "المنافقون",
-            "Al-Munafiqoon",
-            2,
-            null
-        ],
-        [
-            64,
-            "التغابن",
-            "At-Taghabun",
-            2,
-            null
-        ],
-        [
-            65,
-            "الطلاق",
-            "At-Talaq",
-            2,
-            null
-        ],
-        [
-            66,
-            "التحريم",
-            "At-Tahrim",
-            2,
-            null
-        ],
-        [
-            67,
-            "الملك",
-            "Al-Mulk",
-            1,
-            null
-        ],
-        [
-            68,
-            "القلم",
-            "Al-Qalam",
-            1,
-            null
-        ],
-        [
-            69,
-            "الحاقة",
-            "Al-Haaqqa",
-            1,
-            null
-        ],
-        [
-            70,
-            "المعارج",
-            "Al-Maarij",
-            1,
-            null
-        ],
-        [
-            71,
-            "نوح",
-            "Nooh",
-            1,
-            null
-        ],
-        [
-            72,
-            "الجن",
-            "Al-Jinn",
-            1,
-            null
-        ],
-        [
-            73,
-            "المزمل",
-            "Al-Muzzammil",
-            1,
-            null
-        ],
-        [
-            74,
-            "المدثر",
-            "Al-Muddaththir",
-            1,
-            null
-        ],
-        [
-            75,
-            "القيامة",
-            "Al-Qiyama",
-            1,
-            null
-        ],
-        [
-            76,
-            "الإنسان",
-            "Al-Insan",
-            1,
-            null
-        ],
-        [
-            77,
-            "المرسلات",
-            "Al-Mursalat",
-            1,
-            null
-        ],
-        [
-            78,
-            "النبأ",
-            "An-Naba",
-            1,
-            null
-        ],
-        [
-            79,
-            "النازعات",
-            "An-Naziat",
-            1,
-            null
-        ],
-        [
-            80,
-            "عبس",
-            "Abasa",
-            1,
-            null
-        ],
-        [
-            81,
-            "التكوير",
-            "At-Takwir",
-            1,
-            null
-        ],
-        [
-            82,
-            "الانفطار",
-            "Al-Infitar",
-            1,
-            null
-        ],
-        [
-            83,
-            "المطففين",
-            "Al-Mutaffifin",
-            1,
-            null
-        ],
-        [
-            84,
-            "الانشقاق",
-            "Al-Inshiqaq",
-            1,
-            null
-        ],
-        [
-            85,
-            "البروج",
-            "Al-Burooj",
-            1,
-            null
-        ],
-        [
-            86,
-            "الطارق",
-            "At-Tariq",
-            1,
-            null
-        ],
-        [
-            87,
-            "الأعلى",
-            "Al-Ala",
-            1,
-            null
-        ],
-        [
-            88,
-            "الغاشية",
-            "Al-Ghashiya",
-            1,
-            null
-        ],
-        [
-            89,
-            "الفجر",
-            "Al-Fajr",
-            1,
-            null
-        ],
-        [
-            90,
-            "البلد",
-            "Al-Balad",
-            1,
-            null
-        ],
-        [
-            91,
-            "الشمس",
-            "Ash-Shams",
-            1,
-            null
-        ],
-        [
-            92,
-            "الليل",
-            "Al-Lail",
-            1,
-            null
-        ],
-        [
-            93,
-            "الضحى",
-            "Ad-Dhuha",
-            1,
-            null
-        ],
-        [
-            94,
-            "الشرح",
-            "Al-Inshirah",
-            1,
-            null
-        ],
-        [
-            95,
-            "التين",
-            "At-Tin",
-            1,
-            null
-        ],
-        [
-            96,
-            "العلق",
-            "Al-Alaq",
-            1,
-            null
-        ],
-        [
-            97,
-            "القدر",
-            "Al-Qadr",
-            1,
-            null
-        ],
-        [
-            98,
-            "البينة",
-            "Al-Bayyina",
-            2,
-            null
-        ],
-        [
-            99,
-            "الزلزلة",
-            "Az-Zalzala",
-            2,
-            null
-        ],
-        [
-            100,
-            "العاديات",
-            "Al-Adiyat",
-            1,
-            null
-        ],
-        [
-            101,
-            "القارعة",
-            "Al-Qaria",
-            1,
-            null
-        ],
-        [
-            102,
-            "التكاثر",
-            "At-Takathur",
-            1,
-            null
-        ],
-        [
-            103,
-            "العصر",
-            "Al-Asr",
-            1,
-            null
-        ],
-        [
-            104,
-            "الهمزة",
-            "Al-Humaza",
-            1,
-            null
-        ],
-        [
-            105,
-            "الفيل",
-            "Al-Fil",
-            1,
-            null
-        ],
-        [
-            106,
-            "قريش",
-            "Quraish",
-            1,
-            null
-        ],
-        [
-            107,
-            "الماعون",
-            "Al-Maun",
-            1,
-            null
-        ],
-        [
-            108,
-            "الكوثر",
-            "Al-Kauther",
-            1,
-            null
-        ],
-        [
-            109,
-            "الكافرون",
-            "Al-Kafiroon",
-            1,
-            null
-        ],
-        [
-            110,
-            "النصر",
-            "An-Nasr",
-            2,
-            null
-        ],
-        [
-            111,
-            "المسد",
-            "Al-Masadd",
-            1,
-            null
-        ],
-        [
-            112,
-            "الإخلاص",
-            "Al-Ikhlas",
-            1,
-            null
-        ],
-        [
-            113,
-            "الفلق",
-            "Al-Falaq",
-            1,
-            null
-        ],
-        [
-            114,
-            "الناس",
-            "An-Nas",
-            1,
-            null
-        ]
-    ]
-}
+[
+  {
+    "model": "Sora.Sora",
+    "pk": 1,
+    "fields": {
+      "name": "\u0627\u0644\u0641\u0627\u062a\u062d\u0629",
+      "native": "Al-Fatiha",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 2,
+    "fields": {
+      "name": "\u0627\u0644\u0628\u0642\u0631\u0629",
+      "native": "Al-Baqara",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 3,
+    "fields": {
+      "name": "\u0622\u0644 \u0639\u0645\u0631\u0627\u0646",
+      "native": "Aal-E-Imran",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 4,
+    "fields": {
+      "name": "\u0627\u0644\u0646\u0633\u0627\u0621",
+      "native": "An-Nisa",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 5,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u0627\u0626\u062f\u0629",
+      "native": "Al-Maeda",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 6,
+    "fields": {
+      "name": "\u0627\u0644\u0623\u0646\u0639\u0627\u0645",
+      "native": "Al-Anaam",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 7,
+    "fields": {
+      "name": "\u0627\u0644\u0623\u0639\u0631\u0627\u0641",
+      "native": "Al-Araf",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 8,
+    "fields": {
+      "name": "\u0627\u0644\u0623\u0646\u0641\u0627\u0644",
+      "native": "Al-Anfal",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 9,
+    "fields": {
+      "name": "\u0627\u0644\u062a\u0648\u0628\u0629",
+      "native": "At-Tawba",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 10,
+    "fields": {
+      "name": "\u064a\u0648\u0646\u0633",
+      "native": "Yunus",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 11,
+    "fields": { "name": "\u0647\u0648\u062f", "native": "Hud", "place": 1 }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 12,
+    "fields": {
+      "name": "\u064a\u0648\u0633\u0641",
+      "native": "Yusuf",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 13,
+    "fields": {
+      "name": "\u0627\u0644\u0631\u0639\u062f",
+      "native": "Ar-Rad",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 14,
+    "fields": {
+      "name": "\u0625\u0628\u0631\u0627\u0647\u064a\u0645",
+      "native": "Ibrahim",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 15,
+    "fields": {
+      "name": "\u0627\u0644\u062d\u062c\u0631",
+      "native": "Al-Hijr",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 16,
+    "fields": {
+      "name": "\u0627\u0644\u0646\u062d\u0644",
+      "native": "An-Nahl",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 17,
+    "fields": {
+      "name": "\u0627\u0644\u0625\u0633\u0631\u0627\u0621",
+      "native": "Al-Isra",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 18,
+    "fields": {
+      "name": "\u0627\u0644\u0643\u0647\u0641",
+      "native": "Al-Kahf",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 19,
+    "fields": {
+      "name": "\u0645\u0631\u064a\u0645",
+      "native": "Maryam",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 20,
+    "fields": { "name": "\u0637\u0647", "native": "Ta-Ha", "place": 1 }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 21,
+    "fields": {
+      "name": "\u0627\u0644\u0623\u0646\u0628\u064a\u0627\u0621",
+      "native": "Al-Anbiya",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 22,
+    "fields": {
+      "name": "\u0627\u0644\u062d\u062c",
+      "native": "Al-Hajj",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 23,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u0624\u0645\u0646\u0648\u0646",
+      "native": "Al-Mumenoon",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 24,
+    "fields": {
+      "name": "\u0627\u0644\u0646\u0648\u0631",
+      "native": "An-Noor",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 25,
+    "fields": {
+      "name": "\u0627\u0644\u0641\u0631\u0642\u0627\u0646",
+      "native": "Al-Furqan",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 26,
+    "fields": {
+      "name": "\u0627\u0644\u0634\u0639\u0631\u0627\u0621",
+      "native": "Ash-Shuara",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 27,
+    "fields": {
+      "name": "\u0627\u0644\u0646\u0645\u0644",
+      "native": "An-Naml",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 28,
+    "fields": {
+      "name": "\u0627\u0644\u0642\u0635\u0635",
+      "native": "Al-Qasas",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 29,
+    "fields": {
+      "name": "\u0627\u0644\u0639\u0646\u0643\u0628\u0648\u062a",
+      "native": "Al-Ankaboot",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 30,
+    "fields": {
+      "name": "\u0627\u0644\u0631\u0648\u0645",
+      "native": "Ar-Room",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 31,
+    "fields": {
+      "name": "\u0644\u0642\u0645\u0627\u0646",
+      "native": "Luqman",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 32,
+    "fields": {
+      "name": "\u0627\u0644\u0633\u062c\u062f\u0629",
+      "native": "As-Sajda",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 33,
+    "fields": {
+      "name": "\u0627\u0644\u0623\u062d\u0632\u0627\u0628",
+      "native": "Al-Ahzab",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 34,
+    "fields": { "name": "\u0633\u0628\u0623", "native": "Saba", "place": 1 }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 35,
+    "fields": {
+      "name": "\u0641\u0627\u0637\u0631",
+      "native": "Fatir",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 36,
+    "fields": { "name": "\u064a\u0633", "native": "Ya-Seen", "place": 1 }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 37,
+    "fields": {
+      "name": "\u0627\u0644\u0635\u0627\u0641\u0627\u062a",
+      "native": "As-Saaffat",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 38,
+    "fields": { "name": "\u0635", "native": "Sad", "place": 1 }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 39,
+    "fields": {
+      "name": "\u0627\u0644\u0632\u0645\u0631",
+      "native": "Az-Zumar",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 40,
+    "fields": {
+      "name": "\u063a\u0627\u0641\u0631",
+      "native": "Ghafir",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 41,
+    "fields": {
+      "name": "\u0641\u0635\u0644\u062a",
+      "native": "Fussilat",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 42,
+    "fields": {
+      "name": "\u0627\u0644\u0634\u0648\u0631\u0649",
+      "native": "Ash-Shura",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 43,
+    "fields": {
+      "name": "\u0627\u0644\u0632\u062e\u0631\u0641",
+      "native": "Az-Zukhruf",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 44,
+    "fields": {
+      "name": "\u0627\u0644\u062f\u062e\u0627\u0646",
+      "native": "Ad-Dukhan",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 45,
+    "fields": {
+      "name": "\u0627\u0644\u062c\u0627\u062b\u064a\u0629",
+      "native": "Al-Jathiya",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 46,
+    "fields": {
+      "name": "\u0627\u0644\u0623\u062d\u0642\u0627\u0641",
+      "native": "Al-Ahqaf",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 47,
+    "fields": {
+      "name": "\u0645\u062d\u0645\u062f",
+      "native": "Muhammad",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 48,
+    "fields": {
+      "name": "\u0627\u0644\u0641\u062a\u062d",
+      "native": "Al-Fath",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 49,
+    "fields": {
+      "name": "\u0627\u0644\u062d\u062c\u0631\u0627\u062a",
+      "native": "Al-Hujraat",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 50,
+    "fields": { "name": "\u0642", "native": "Qaf", "place": 1 }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 51,
+    "fields": {
+      "name": "\u0627\u0644\u0630\u0627\u0631\u064a\u0627\u062a",
+      "native": "Adh-Dhariyat",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 52,
+    "fields": {
+      "name": "\u0627\u0644\u0637\u0648\u0631",
+      "native": "At-Tur",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 53,
+    "fields": {
+      "name": "\u0627\u0644\u0646\u062c\u0645",
+      "native": "An-Najm",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 54,
+    "fields": {
+      "name": "\u0627\u0644\u0642\u0645\u0631",
+      "native": "Al-Qamar",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 55,
+    "fields": {
+      "name": "\u0627\u0644\u0631\u062d\u0645\u0646",
+      "native": "Ar-Rahman",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 56,
+    "fields": {
+      "name": "\u0627\u0644\u0648\u0627\u0642\u0639\u0629",
+      "native": "Al-Waqia",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 57,
+    "fields": {
+      "name": "\u0627\u0644\u062d\u062f\u064a\u062f",
+      "native": "Al-Hadid",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 58,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u062c\u0627\u062f\u0644\u0629",
+      "native": "Al-Mujadila",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 59,
+    "fields": {
+      "name": "\u0627\u0644\u062d\u0634\u0631",
+      "native": "Al-Hashr",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 60,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u0645\u062a\u062d\u0646\u0629",
+      "native": "Al-Mumtahina",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 61,
+    "fields": {
+      "name": "\u0627\u0644\u0635\u0641",
+      "native": "As-Saff",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 62,
+    "fields": {
+      "name": "\u0627\u0644\u062c\u0645\u0639\u0629",
+      "native": "Al-Jumua",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 63,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u0646\u0627\u0641\u0642\u0648\u0646",
+      "native": "Al-Munafiqoon",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 64,
+    "fields": {
+      "name": "\u0627\u0644\u062a\u063a\u0627\u0628\u0646",
+      "native": "At-Taghabun",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 65,
+    "fields": {
+      "name": "\u0627\u0644\u0637\u0644\u0627\u0642",
+      "native": "At-Talaq",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 66,
+    "fields": {
+      "name": "\u0627\u0644\u062a\u062d\u0631\u064a\u0645",
+      "native": "At-Tahrim",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 67,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u0644\u0643",
+      "native": "Al-Mulk",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 68,
+    "fields": {
+      "name": "\u0627\u0644\u0642\u0644\u0645",
+      "native": "Al-Qalam",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 69,
+    "fields": {
+      "name": "\u0627\u0644\u062d\u0627\u0642\u0629",
+      "native": "Al-Haaqqa",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 70,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u0639\u0627\u0631\u062c",
+      "native": "Al-Maarij",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 71,
+    "fields": { "name": "\u0646\u0648\u062d", "native": "Nooh", "place": 1 }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 72,
+    "fields": {
+      "name": "\u0627\u0644\u062c\u0646",
+      "native": "Al-Jinn",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 73,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u0632\u0645\u0644",
+      "native": "Al-Muzzammil",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 74,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u062f\u062b\u0631",
+      "native": "Al-Muddaththir",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 75,
+    "fields": {
+      "name": "\u0627\u0644\u0642\u064a\u0627\u0645\u0629",
+      "native": "Al-Qiyama",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 76,
+    "fields": {
+      "name": "\u0627\u0644\u0625\u0646\u0633\u0627\u0646",
+      "native": "Al-Insan",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 77,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u0631\u0633\u0644\u0627\u062a",
+      "native": "Al-Mursalat",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 78,
+    "fields": {
+      "name": "\u0627\u0644\u0646\u0628\u0623",
+      "native": "An-Naba",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 79,
+    "fields": {
+      "name": "\u0627\u0644\u0646\u0627\u0632\u0639\u0627\u062a",
+      "native": "An-Naziat",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 80,
+    "fields": { "name": "\u0639\u0628\u0633", "native": "Abasa", "place": 1 }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 81,
+    "fields": {
+      "name": "\u0627\u0644\u062a\u0643\u0648\u064a\u0631",
+      "native": "At-Takwir",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 82,
+    "fields": {
+      "name": "\u0627\u0644\u0627\u0646\u0641\u0637\u0627\u0631",
+      "native": "Al-Infitar",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 83,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u0637\u0641\u0641\u064a\u0646",
+      "native": "Al-Mutaffifin",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 84,
+    "fields": {
+      "name": "\u0627\u0644\u0627\u0646\u0634\u0642\u0627\u0642",
+      "native": "Al-Inshiqaq",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 85,
+    "fields": {
+      "name": "\u0627\u0644\u0628\u0631\u0648\u062c",
+      "native": "Al-Burooj",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 86,
+    "fields": {
+      "name": "\u0627\u0644\u0637\u0627\u0631\u0642",
+      "native": "At-Tariq",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 87,
+    "fields": {
+      "name": "\u0627\u0644\u0623\u0639\u0644\u0649",
+      "native": "Al-Ala",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 88,
+    "fields": {
+      "name": "\u0627\u0644\u063a\u0627\u0634\u064a\u0629",
+      "native": "Al-Ghashiya",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 89,
+    "fields": {
+      "name": "\u0627\u0644\u0641\u062c\u0631",
+      "native": "Al-Fajr",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 90,
+    "fields": {
+      "name": "\u0627\u0644\u0628\u0644\u062f",
+      "native": "Al-Balad",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 91,
+    "fields": {
+      "name": "\u0627\u0644\u0634\u0645\u0633",
+      "native": "Ash-Shams",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 92,
+    "fields": {
+      "name": "\u0627\u0644\u0644\u064a\u0644",
+      "native": "Al-Lail",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 93,
+    "fields": {
+      "name": "\u0627\u0644\u0636\u062d\u0649",
+      "native": "Ad-Dhuha",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 94,
+    "fields": {
+      "name": "\u0627\u0644\u0634\u0631\u062d",
+      "native": "Al-Inshirah",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 95,
+    "fields": {
+      "name": "\u0627\u0644\u062a\u064a\u0646",
+      "native": "At-Tin",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 96,
+    "fields": {
+      "name": "\u0627\u0644\u0639\u0644\u0642",
+      "native": "Al-Alaq",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 97,
+    "fields": {
+      "name": "\u0627\u0644\u0642\u062f\u0631",
+      "native": "Al-Qadr",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 98,
+    "fields": {
+      "name": "\u0627\u0644\u0628\u064a\u0646\u0629",
+      "native": "Al-Bayyina",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 99,
+    "fields": {
+      "name": "\u0627\u0644\u0632\u0644\u0632\u0644\u0629",
+      "native": "Az-Zalzala",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 100,
+    "fields": {
+      "name": "\u0627\u0644\u0639\u0627\u062f\u064a\u0627\u062a",
+      "native": "Al-Adiyat",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 101,
+    "fields": {
+      "name": "\u0627\u0644\u0642\u0627\u0631\u0639\u0629",
+      "native": "Al-Qaria",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 102,
+    "fields": {
+      "name": "\u0627\u0644\u062a\u0643\u0627\u062b\u0631",
+      "native": "At-Takathur",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 103,
+    "fields": {
+      "name": "\u0627\u0644\u0639\u0635\u0631",
+      "native": "Al-Asr",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 104,
+    "fields": {
+      "name": "\u0627\u0644\u0647\u0645\u0632\u0629",
+      "native": "Al-Humaza",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 105,
+    "fields": {
+      "name": "\u0627\u0644\u0641\u064a\u0644",
+      "native": "Al-Fil",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 106,
+    "fields": {
+      "name": "\u0642\u0631\u064a\u0634",
+      "native": "Quraish",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 107,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u0627\u0639\u0648\u0646",
+      "native": "Al-Maun",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 108,
+    "fields": {
+      "name": "\u0627\u0644\u0643\u0648\u062b\u0631",
+      "native": "Al-Kauther",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 109,
+    "fields": {
+      "name": "\u0627\u0644\u0643\u0627\u0641\u0631\u0648\u0646",
+      "native": "Al-Kafiroon",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 110,
+    "fields": {
+      "name": "\u0627\u0644\u0646\u0635\u0631",
+      "native": "An-Nasr",
+      "place": 2
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 111,
+    "fields": {
+      "name": "\u0627\u0644\u0645\u0633\u062f",
+      "native": "Al-Masadd",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 112,
+    "fields": {
+      "name": "\u0627\u0644\u0625\u062e\u0644\u0627\u0635",
+      "native": "Al-Ikhlas",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 113,
+    "fields": {
+      "name": "\u0627\u0644\u0641\u0644\u0642",
+      "native": "Al-Falaq",
+      "place": 1
+    }
+  },
+  {
+    "model": "Sora.Sora",
+    "pk": 114,
+    "fields": {
+      "name": "\u0627\u0644\u0646\u0627\u0633",
+      "native": "An-Nas",
+      "place": 1
+    }
+  }
+]

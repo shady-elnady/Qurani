@@ -12,4 +12,4 @@ class AyaViewSet(ModelViewSet):
     # permission_classes = [IsAuthenticated, IsAdminUser]
 
     def get_queryset(self):
-        return Aya.objects.all().filter(soraid =self.request.query_params.get('sora'))
+        return Aya.objects.all().filter(soraid =self.request.query_params.get('sora_id'))
